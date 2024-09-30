@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>estimation.fepois</title>
+<title>estimation.feiv_.feiv</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,44 +20,10 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -100,9 +66,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 </head>
@@ -128,37 +91,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Quickstart</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../compare-fixest-pyfixest.html"> 
-<span class="menu-text">Compare fixest &amp; pyfixest</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../difference-in-differences.html"> 
-<span class="menu-text">Difference-in-Differences Estimation</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../replicating-the-effect.html"> 
-<span class="menu-text">Replicating ‘The Effect’ with PyFixest</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../table-layout.html"> 
-<span class="menu-text">Regression Tables with <code>pf.etable()</code> and Summary Statistics via <code>pf.dtable()</code></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../marginaleffects.html"> 
-<span class="menu-text">Hypothesis testing and Marginal Effects with <code>py-marginaleffects</code></span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="../reference/index.html" aria-current="page"> 
-<span class="menu-text">Documentation</span></a>
+<span class="menu-text">Function Reference</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../news.html"> 
-<span class="menu-text">Changelog</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-learn-more" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Learn more</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-learn-more">    
+        <li>
+    <a class="dropdown-item" href="../compare-fixest-pyfixest.html">
+ <span class="dropdown-text">Compare fixest &amp; PyFixest</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../difference-in-differences.html">
+ <span class="dropdown-text">Difference-in-Differences Estimation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../replicating-the-effect.html">
+ <span class="dropdown-text">Replicating ‘The Effect’ with PyFixest</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../table-layout.html">
+ <span class="dropdown-text">Regression Tables and Summary Statistics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../marginaleffects.html">
+ <span class="dropdown-text">Hypothesis Testing and Marginal Effects</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -177,7 +143,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/estimation.feols.html">Estimation Functions</a></li><li class="breadcrumb-item"><a href="../reference/estimation.fepois.html">estimation.fepois</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/estimation.feols_.Feols.html">Estimation Classes</a></li><li class="breadcrumb-item"><a href="../reference/estimation.feiv_.Feiv.html">estimation.feiv_.Feiv</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -206,14 +172,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/estimation.feols.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">estimation.feols</span></a>
+  <a href="../reference/estimation.estimation.feols.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">estimation.estimation.feols</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/estimation.fepois.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">estimation.fepois</span></a>
+  <a href="../reference/estimation.estimation.fepois.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">estimation.estimation.fepois</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -259,20 +225,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/estimation.Feols.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">estimation.Feols</span></a>
+  <a href="../reference/estimation.feols_.Feols.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">estimation.feols_.Feols</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/estimation.Fepois.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">estimation.Fepois</span></a>
+  <a href="../reference/estimation.fepois_.Fepois.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">estimation.fepois_.Fepois</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/estimation.Feiv.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">estimation.Feiv</span></a>
+  <a href="../reference/estimation.feiv_.Feiv.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">estimation.feiv_.Feiv</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/estimation.feols_compressed_.FeolsCompressed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">estimation.feols_compressed_.FeolsCompressed</span></a>
   </div>
 </li>
       </ul>
@@ -288,6 +260,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../reference/did.visualize.panelview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">did.visualize.panelview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../reference/report.summary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">report.summary</span></a>
   </div>
@@ -296,6 +274,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../reference/report.etable.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">report.etable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/report.dtable.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">report.dtable</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -350,35 +334,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/estimation.feols.html">Estimation Functions</a></li><li class="breadcrumb-item"><a href="../reference/estimation.fepois.html">estimation.fepois</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">estimation.fepois</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p><code>estimation.fepois(fml, data, vcov=None, ssc=ssc(), fixef_rm='none', fixef_tol=1e-08, iwls_tol=1e-08, iwls_maxiter=25, collin_tol=1e-10, drop_intercept=False, i_ref1=None, copy_data=True, store_data=True, lean=False)</code></p>
-<p>Estimate Poisson regression model with fixed effects using the <code>ppmlhdfe</code> algorithm.</p>
+<section id="pyfixest.estimation.feiv_.Feiv" class="level1">
+<h1>estimation.feiv_.Feiv</h1>
+<p><code>estimation.feiv_.Feiv(self, FixestFormula, data, ssc_dict, drop_singletons, drop_intercept, weights, weights_type, collin_tol, fixef_tol, lookup_demeaned_data, solver='np.linalg.solve', store_data=True, copy_data=True, lean=False)</code></p>
+<p>Non user-facing class to estimate an IV model using a 2SLS estimator.</p>
+<p>Inherits from the Feols class. Users should not directly instantiate this class, but rather use the <a href="../reference/estimation.feols.qmd">feols()</a> function. Note that no demeaning is performed in this class: demeaning is performed in the <a href="../reference/estimation.fixest_multi.qmd">FixestMulti</a> class (to allow for caching of demeaned variables for multiple estimation).</p>
 <section id="parameters" class="level2">
 <h2 class="anchored" data-anchor-id="parameters">Parameters</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 3%">
-<col style="width: 6%">
-<col style="width: 87%">
-<col style="width: 2%">
+<col style="width: 9%">
+<col style="width: 10%">
+<col style="width: 66%">
+<col style="width: 13%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -390,99 +361,241 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>fml</code></td>
-<td>str</td>
-<td>A two-sided formula string using fixest formula syntax. Syntax: “Y ~ X1 + X2 | FE1 + FE2”. “|” separates left-hand side and fixed effects. Special syntax includes: - Stepwise regressions (sw, sw0) - Cumulative stepwise regression (csw, csw0) - Multiple dependent variables (Y1 + Y2 ~ X) - Interaction of variables (i(X1,X2)) - Interacted fixed effects (fe1^fe2) Compatible with formula parsing via the formulaic module.</td>
+<td><code>Y</code></td>
+<td>np.ndarray</td>
+<td>Dependent variable, a two-dimensional np.array.</td>
 <td><em>required</em></td>
 </tr>
 <tr class="even">
-<td><code>data</code></td>
-<td>DataFrameType</td>
-<td>A pandas or polars dataframe containing the variables in the formula.</td>
+<td><code>X</code></td>
+<td>np.ndarray</td>
+<td>Independent variables, a two-dimensional np.array.</td>
 <td><em>required</em></td>
 </tr>
 <tr class="odd">
-<td><code>vcov</code></td>
-<td>Union[str, dict[str, str]]</td>
-<td>Type of variance-covariance matrix for inference. Options include “iid”, “hetero”, “HC1”, “HC2”, “HC3”, or a dictionary for CRV1/CRV3 inference.</td>
-<td><code>None</code></td>
+<td><code>endgvar</code></td>
+<td>np.ndarray</td>
+<td>Endogenous Indenpendent variables, a two-dimensional np.array.</td>
+<td><em>required</em></td>
 </tr>
 <tr class="even">
-<td><code>ssc</code></td>
-<td>str</td>
-<td>A ssc object specifying the small sample correction for inference.</td>
-<td><code>ssc()</code></td>
+<td><code>Z</code></td>
+<td>np.ndarray</td>
+<td>Instruments, a two-dimensional np.array.</td>
+<td><em>required</em></td>
 </tr>
 <tr class="odd">
-<td><code>fixef_rm</code></td>
-<td>str</td>
-<td>Specifies whether to drop singleton fixed effects. Options: “none” (default), “singleton”.</td>
-<td><code>'none'</code></td>
+<td><code>weights</code></td>
+<td>np.ndarray</td>
+<td>Weights, a one-dimensional np.array.</td>
+<td><em>required</em></td>
 </tr>
 <tr class="even">
-<td><code>fixef_tol</code></td>
-<td>float</td>
-<td>Tolerance for the fixed effects demeaning algorithm. Defaults to 1e-08.</td>
-<td><code>1e-08</code></td>
+<td><code>coefnames_x</code></td>
+<td>list</td>
+<td>Names of the coefficients of X.</td>
+<td><em>required</em></td>
 </tr>
 <tr class="odd">
-<td><code>iwls_tol</code></td>
-<td>Optional[float]</td>
-<td>Tolerance for IWLS convergence, by default 1e-08.</td>
-<td><code>1e-08</code></td>
+<td><code>coefnames_z</code></td>
+<td>list</td>
+<td>Names of the coefficients of Z.</td>
+<td><em>required</em></td>
 </tr>
 <tr class="even">
-<td><code>iwls_maxiter</code></td>
-<td>Optional[float]</td>
-<td>Maximum number of iterations for IWLS convergence, by default 25.</td>
-<td><code>25</code></td>
-</tr>
-<tr class="odd">
 <td><code>collin_tol</code></td>
 <td>float</td>
-<td>Tolerance for collinearity check, by default 1e-10.</td>
-<td><code>1e-10</code></td>
-</tr>
-<tr class="even">
-<td><code>drop_intercept</code></td>
-<td>bool</td>
-<td>Whether to drop the intercept from the model, by default False.</td>
-<td><code>False</code></td>
+<td>Tolerance for collinearity check.</td>
+<td><em>required</em></td>
 </tr>
 <tr class="odd">
-<td><code>i_ref1</code></td>
-<td></td>
-<td>Deprecated with pyfixest version 0.18.0. Please use i-syntax instead, i.e.&nbsp;fepois(‘Y~ i(f1, ref=1)’, data = data) instead of the former fepois(‘Y~ i(f1)’, data = data, i_ref=1).</td>
-<td><code>None</code></td>
+<td><code>solver</code></td>
+<td>str</td>
+<td>Solver to use for the estimation. Alternative is ‘np.linalg.lstsq’.</td>
+<td><code>'np.linalg.solve'</code></td>
 </tr>
 <tr class="even">
-<td><code>copy_data</code></td>
-<td>bool</td>
-<td>Whether to copy the data before estimation, by default True. If set to False, the data is not copied, which can save memory but may lead to unintended changes in the input data outside of <code>fepois</code>. For example, the input data set is re-index within the function. As far as I know, the only other relevant case is when using interacted fixed effects, in which case you’ll find a column with interacted fixed effects in the data set.</td>
-<td><code>True</code></td>
+<td><code>weights_name</code></td>
+<td>Optional[str]</td>
+<td>Name of the weights variable.</td>
+<td><em>required</em></td>
 </tr>
 <tr class="odd">
-<td><code>store_data</code></td>
-<td>bool</td>
-<td>Whether to store the data in the model object, by default True. If set to False, the data is not stored in the model object, which can improve performance and save memory. However, it will no longer be possible to access the data via the <code>data</code> attribute of the model object. This has impact on post-estimation capabilities that rely on the data, e.g.&nbsp;<code>predict()</code> or <code>vcov()</code>.</td>
-<td><code>True</code></td>
-</tr>
-<tr class="even">
-<td><code>lean</code></td>
-<td>bool</td>
-<td>False by default. If True, then all large objects are removed from the returned result: this will save memory but will block the possibility to use many methods. It is recommended to use the argument vcov to obtain the appropriate standard-errors at estimation time, since obtaining different SEs won’t be possible afterwards.</td>
-<td><code>False</code></td>
+<td><code>weights_type</code></td>
+<td>Optional[str]</td>
+<td>Type of the weights variable. Either “aweights” for analytic weights or “fweights” for frequency weights.</td>
+<td><em>required</em></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="returns" class="level2">
-<h2 class="anchored" data-anchor-id="returns">Returns</h2>
+<section id="attributes" class="level2">
+<h2 class="anchored" data-anchor-id="attributes">Attributes</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 6%">
-<col style="width: 93%">
+<col style="width: 5%">
+<col style="width: 3%">
+<col style="width: 90%">
 </colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>_Z</td>
+<td>np.ndarray</td>
+<td>Processed instruments after handling multicollinearity.</td>
+</tr>
+<tr class="even">
+<td>_weights_type_feiv</td>
+<td>str</td>
+<td>Type of the weights variable defined in Feiv class. Either “aweights” for analytic weights or “fweights” for frequency weights.</td>
+</tr>
+<tr class="odd">
+<td>_coefnames_z</td>
+<td>list</td>
+<td>Names of coefficients for Z after handling multicollinearity.</td>
+</tr>
+<tr class="even">
+<td>_collin_vars_z</td>
+<td>list</td>
+<td>Variables identified as collinear in Z.</td>
+</tr>
+<tr class="odd">
+<td>_collin_index_z</td>
+<td>list</td>
+<td>Indices of collinear variables in Z.</td>
+</tr>
+<tr class="even">
+<td>_is_iv</td>
+<td>bool</td>
+<td>Indicator if instrumental variables are used.</td>
+</tr>
+<tr class="odd">
+<td>_support_crv3_inference</td>
+<td>bool</td>
+<td>Indicator for supporting CRV3 inference.</td>
+</tr>
+<tr class="even">
+<td>_support_iid_inference</td>
+<td>bool</td>
+<td>Indicator for supporting IID inference.</td>
+</tr>
+<tr class="odd">
+<td>_tZX</td>
+<td>np.ndarray</td>
+<td>Transpose of Z times X.</td>
+</tr>
+<tr class="even">
+<td>_tXZ</td>
+<td>np.ndarray</td>
+<td>Transpose of X times Z.</td>
+</tr>
+<tr class="odd">
+<td>_tZy</td>
+<td>np.ndarray</td>
+<td>Transpose of Z times Y.</td>
+</tr>
+<tr class="even">
+<td>_tZZinv</td>
+<td>np.ndarray</td>
+<td>Inverse of transpose of Z times Z.</td>
+</tr>
+<tr class="odd">
+<td>_beta_hat</td>
+<td>np.ndarray</td>
+<td>Estimated regression coefficients.</td>
+</tr>
+<tr class="even">
+<td>_Y_hat_link</td>
+<td>np.ndarray</td>
+<td>Predicted values of the regression model.</td>
+</tr>
+<tr class="odd">
+<td>_u_hat</td>
+<td>np.ndarray</td>
+<td>Residuals of the regression model.</td>
+</tr>
+<tr class="even">
+<td>_scores</td>
+<td>np.ndarray</td>
+<td>Scores used in the regression.</td>
+</tr>
+<tr class="odd">
+<td>_hessian</td>
+<td>np.ndarray</td>
+<td>Hessian matrix used in the regression.</td>
+</tr>
+<tr class="even">
+<td>_bread</td>
+<td>np.ndarray</td>
+<td>Bread matrix used in the regression.</td>
+</tr>
+<tr class="odd">
+<td>_pi_hat</td>
+<td>np.ndarray</td>
+<td>Estimated coefficients from 1st stage regression</td>
+</tr>
+<tr class="even">
+<td>_X_hat</td>
+<td>np.ndarray</td>
+<td>Predicted values of the 1st stage regression</td>
+</tr>
+<tr class="odd">
+<td>_v_hat</td>
+<td>np.ndarray</td>
+<td>Residuals of the 1st stage regression</td>
+</tr>
+<tr class="even">
+<td>_model_1st_stage</td>
+<td>Any</td>
+<td>feols object of 1st stage regression. It contains various results and diagnostics from the fixed effects OLS regression.</td>
+</tr>
+<tr class="odd">
+<td>_endogvar_1st_stage</td>
+<td>np.ndarray</td>
+<td>Unweihgted Endogenous independent variable vector</td>
+</tr>
+<tr class="even">
+<td>_Z_1st_stage</td>
+<td>np.ndarray</td>
+<td>Unweighted instruments vector to be used for 1st stage</td>
+</tr>
+<tr class="odd">
+<td>_non_exo_instruments</td>
+<td>list</td>
+<td>List of instruments name excluding exogenous independent vars.</td>
+</tr>
+<tr class="even">
+<td>__p_iv</td>
+<td>scalar</td>
+<td>Number of instruments listed in _non_exo_instruments</td>
+</tr>
+<tr class="odd">
+<td>_f_stat_1st_stage</td>
+<td>scalar</td>
+<td>F-statistics of First Stage regression for evaluation of IV weakness. The computed F-statistics test the following null hypothesis : # H0 : β_{z_1} = 0 &amp; … &amp; β_{z_{p_iv}} = 0 where z_1, …, z_{p_iv} # are the instrument variables # H1 : H0 does not hold Note that this F-statistics is adjusted to heteroskedasticity / clusters if users set specification of variance-covariance matrix type</td>
+</tr>
+<tr class="even">
+<td>_eff_F</td>
+<td>scalar</td>
+<td>Effective F-statistics of first stage regression as in Olea and Pflueger 2013</td>
+</tr>
+<tr class="odd">
+<td>_data</td>
+<td>pd.DataFrame</td>
+<td>The data frame used in the estimation. None if arguments <code>lean = True</code> or <code>store_data = False</code>.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="raises" class="level2">
+<h2 class="anchored" data-anchor-id="raises">Raises</h2>
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Type</th>
@@ -491,108 +604,240 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td>object</td>
-<td>An instance of the <code>Fepois</code> class or an instance of class <code>FixestMulti</code> for multiple models specified via <code>fml</code>.</td>
+<td>ValueError</td>
+<td>If Z is not a two-dimensional array.</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="examples" class="level2">
-<h2 class="anchored" data-anchor-id="examples">Examples</h2>
-<p>The <code>fepois()</code> function can be used to estimate a simple Poisson regression model with fixed effects. The following example regresses <code>Y</code> on <code>X1</code> and <code>X2</code> with fixed effects for <code>f1</code> and <code>f2</code>: fixed effects are specified after the <code>|</code> symbol.</p>
-<div id="9cadef2d" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pyfixest <span class="im">as</span> pf</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pf.get_data(model <span class="op">=</span> <span class="st">"Fepois"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>fit <span class="op">=</span> pf.fepois(<span class="st">"Y ~ X1 + X2 | f1 + f2"</span>, data)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>fit.summary()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="#pyfixest.estimation.feiv_.Feiv.IV_Diag">IV_Diag</a></td>
+<td>Implement IV diagnostic tests.</td>
+</tr>
+<tr class="even">
+<td><a href="#pyfixest.estimation.feiv_.Feiv.IV_weakness_test">IV_weakness_test</a></td>
+<td>Implement IV weakness test (F-test).</td>
+</tr>
+<tr class="odd">
+<td><a href="#pyfixest.estimation.feiv_.Feiv.demean">demean</a></td>
+<td>Demean instruments and endogeneous variable.</td>
+</tr>
+<tr class="even">
+<td><a href="#pyfixest.estimation.feiv_.Feiv.drop_multicol_vars">drop_multicol_vars</a></td>
+<td>Drop multicollinear variables in matrix of instruments Z.</td>
+</tr>
+<tr class="odd">
+<td><a href="#pyfixest.estimation.feiv_.Feiv.eff_F">eff_F</a></td>
+<td>Compute Effective F stat (Olea and Pflueger 2013).</td>
+</tr>
+<tr class="even">
+<td><a href="#pyfixest.estimation.feiv_.Feiv.first_stage">first_stage</a></td>
+<td>Implement First stage regression.</td>
+</tr>
+<tr class="odd">
+<td><a href="#pyfixest.estimation.feiv_.Feiv.get_fit">get_fit</a></td>
+<td>Fit a IV model using a 2SLS estimator.</td>
+</tr>
+<tr class="even">
+<td><a href="#pyfixest.estimation.feiv_.Feiv.to_array">to_array</a></td>
+<td>Transform estimation DataFrames to arrays.</td>
+</tr>
+<tr class="odd">
+<td><a href="#pyfixest.estimation.feiv_.Feiv.wls_transform">wls_transform</a></td>
+<td>Transform variables for WLS estimation.</td>
+</tr>
+</tbody>
+</table>
+<section id="pyfixest.estimation.feiv_.Feiv.IV_Diag" class="level3">
+<h3 class="anchored" data-anchor-id="pyfixest.estimation.feiv_.Feiv.IV_Diag">IV_Diag</h3>
+<p><code>estimation.feiv_.Feiv.IV_Diag(statistics=None)</code></p>
+<p>Implement IV diagnostic tests.</p>
+<section id="notes" class="level4">
+<h4 class="anchored" data-anchor-id="notes">Notes</h4>
+<p>This method covers diagnostic tests related with IV regression. We currently have IV weak tests only. More test will be updated in future updates!</p>
+</section>
+<section id="parameters-1" class="level4">
+<h4 class="anchored" data-anchor-id="parameters-1">Parameters</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 18%">
+<col style="width: 47%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>statistics</code></td>
+<td>list[str]</td>
+<td>List of IV diagnostic statistics</td>
+<td><code>None</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="example" class="level4">
+<h4 class="anchored" data-anchor-id="example">Example</h4>
+<p>The following is an example usage of this method:</p>
+<pre><code>import numpy as np
+import pandas as pd
+from pyfixest.estimation.estimation import feols
 
-            <div id="CN2T9Q"></div>
-            <script type="text/javascript" data-lets-plot-script="library">
-                if(!window.letsPlotCallQueue) {
-                    window.letsPlotCallQueue = [];
-                }; 
-                window.letsPlotCall = function(f) {
-                    window.letsPlotCallQueue.push(f);
-                };
-                (function() {
-                    var script = document.createElement("script");
-                    script.type = "text/javascript";
-                    script.src = "https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.4.1/js-package/distr/lets-plot.min.js";
-                    script.onload = function() {
-                        window.letsPlotCall = function(f) {f();};
-                        window.letsPlotCallQueue.forEach(function(f) {f();});
-                        window.letsPlotCallQueue = [];
-                        
-                    };
-                    script.onerror = function(event) {
-                        window.letsPlotCall = function(f) {};    // noop
-                        window.letsPlotCallQueue = [];
-                        var div = document.createElement("div");
-                        div.style.color = 'darkred';
-                        div.textContent = 'Error loading Lets-Plot JS';
-                        document.getElementById("CN2T9Q").appendChild(div);
-                    };
-                    var e = document.getElementById("CN2T9Q");
-                    e.appendChild(script);
-                })()
-            </script>
-            
-</div>
-<div class="cell-output cell-output-display">
+# Set random seed for reproducibility
+np.random.seed(1)
 
-            <div id="8lo6mi"></div>
-            <script type="text/javascript" data-lets-plot-script="library">
-                if(!window.letsPlotCallQueue) {
-                    window.letsPlotCallQueue = [];
-                }; 
-                window.letsPlotCall = function(f) {
-                    window.letsPlotCallQueue.push(f);
-                };
-                (function() {
-                    var script = document.createElement("script");
-                    script.type = "text/javascript";
-                    script.src = "https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.4.1/js-package/distr/lets-plot.min.js";
-                    script.onload = function() {
-                        window.letsPlotCall = function(f) {f();};
-                        window.letsPlotCallQueue.forEach(function(f) {f();});
-                        window.letsPlotCallQueue = [];
-                        
-                    };
-                    script.onerror = function(event) {
-                        window.letsPlotCall = function(f) {};    // noop
-                        window.letsPlotCallQueue = [];
-                        var div = document.createElement("div");
-                        div.style.color = 'darkred';
-                        div.textContent = 'Error loading Lets-Plot JS';
-                        document.getElementById("8lo6mi").appendChild(div);
-                    };
-                    var e = document.getElementById("8lo6mi");
-                    e.appendChild(script);
-                })()
-            </script>
-            
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>###
+# Number of observations
+n = 1000
 
-Estimation:  Poisson
-Dep. var.: Y, Fixed effects: f1+f2
-Inference:  CRV1
-Observations:  997
+# Simulate the data
+# Instrumental variable
+z = np.random.binomial(1, 0.5, size=n)
+z2 = np.random.binomial(1, 0.5, size=n)
 
-| Coefficient   |   Estimate |   Std. Error |   t value |   Pr(&gt;|t|) |   2.5% |   97.5% |
-|:--------------|-----------:|-------------:|----------:|-----------:|-------:|--------:|
-| X1            |     -0.007 |        0.035 |    -0.190 |      0.850 | -0.075 |   0.062 |
-| X2            |     -0.015 |        0.010 |    -1.449 |      0.147 | -0.035 |   0.005 |
----
-Deviance: 1068.169 </code></pre>
-</div>
-</div>
-<p>For more examples, please take a look at the documentation of the <code>feols()</code> function.</p>
+# Endogenous variable
+d = 0.5 * z + 1.5 * z2 + np.random.normal(size=n)
+
+# Control variables
+c1 = np.random.normal(size=n)
+c2 = np.random.normal(size=n)
+
+# Outcome variable
+y = 1.0 + 1.5 * d + 0.8 * c1 + 0.5 * c2 + np.random.normal(size=n)
+
+# Cluster variable
+cluster = np.random.randint(1, 50, size=n)
+weights = np.random.uniform(1, 3, size=n)
+
+# Create a DataFrame
+data = pd.DataFrame({
+    'd': d,
+    'y': y,
+    'z': z,
+    'z2': z2,
+    'c1': c1,
+    'c2': c2,
+    'cluster': cluster,
+    'weights': weights
+})
+
+vcov_detail = "iid"
+
+# Fit OLS model
+fit_ols = feols("y ~ 1 + d + c1 + c2", data=data, vcov=vcov_detail)
+
+# Fit IV model
+fit_iv = feols("y ~ 1 + c1 + c2 | d ~ z", data=data,
+         vcov=vcov_detail,
+         weights="weights")
+fit_iv.first_stage()
+F_stat_pf = fit_iv._f_stat_1st_stage
+fit_iv.IV_Diag()
+F_stat_eff_pf = fit_iv._eff_F
+
+print("(Unadjusted) F stat :", F_stat_pf)
+print("Effective F stat :", F_stat_eff_pf)
+
+# The example above generates the following results
+# (Unadjusted) F stat : 52.81535560457482
+# Effective F stat : 48.661542741328205</code></pre>
+</section>
+</section>
+<section id="pyfixest.estimation.feiv_.Feiv.IV_weakness_test" class="level3">
+<h3 class="anchored" data-anchor-id="pyfixest.estimation.feiv_.Feiv.IV_weakness_test">IV_weakness_test</h3>
+<p><code>estimation.feiv_.Feiv.IV_weakness_test(iv_diag_statistics=None)</code></p>
+<p>Implement IV weakness test (F-test).</p>
+<p>This method covers hetero-robust and clustered-robust F statistics. It produces two statistics:</p>
+<ul>
+<li>self._f_stat_1st_stage: F statistics of first stage regression</li>
+<li>self._eff_F: Effective F statistics (Olea and Pflueger 2013) of first stage regression</li>
+</ul>
+<section id="notes-1" class="level4">
+<h4 class="anchored" data-anchor-id="notes-1">Notes</h4>
+<p>“self._f_stat_1st_stage” is adjusted to the specification of vcov. If vcov_detail = “iid”, F statistics is not adjusted, otherwise it is always adjusted.</p>
+</section>
+<section id="parameters-2" class="level4">
+<h4 class="anchored" data-anchor-id="parameters-2">Parameters</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 10%">
+<col style="width: 43%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>iv_diag_statistics</code></td>
+<td>list</td>
+<td>List of IV weakness statistics</td>
+<td><code>None</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="pyfixest.estimation.feiv_.Feiv.demean" class="level3">
+<h3 class="anchored" data-anchor-id="pyfixest.estimation.feiv_.Feiv.demean">demean</h3>
+<p><code>estimation.feiv_.Feiv.demean()</code></p>
+<p>Demean instruments and endogeneous variable.</p>
+</section>
+<section id="pyfixest.estimation.feiv_.Feiv.drop_multicol_vars" class="level3">
+<h3 class="anchored" data-anchor-id="pyfixest.estimation.feiv_.Feiv.drop_multicol_vars">drop_multicol_vars</h3>
+<p><code>estimation.feiv_.Feiv.drop_multicol_vars()</code></p>
+<p>Drop multicollinear variables in matrix of instruments Z.</p>
+</section>
+<section id="pyfixest.estimation.feiv_.Feiv.eff_F" class="level3">
+<h3 class="anchored" data-anchor-id="pyfixest.estimation.feiv_.Feiv.eff_F">eff_F</h3>
+<p><code>estimation.feiv_.Feiv.eff_F()</code></p>
+<p>Compute Effective F stat (Olea and Pflueger 2013).</p>
+</section>
+<section id="pyfixest.estimation.feiv_.Feiv.first_stage" class="level3">
+<h3 class="anchored" data-anchor-id="pyfixest.estimation.feiv_.Feiv.first_stage">first_stage</h3>
+<p><code>estimation.feiv_.Feiv.first_stage()</code></p>
+<p>Implement First stage regression.</p>
+</section>
+<section id="pyfixest.estimation.feiv_.Feiv.get_fit" class="level3">
+<h3 class="anchored" data-anchor-id="pyfixest.estimation.feiv_.Feiv.get_fit">get_fit</h3>
+<p><code>estimation.feiv_.Feiv.get_fit()</code></p>
+<p>Fit a IV model using a 2SLS estimator.</p>
+</section>
+<section id="pyfixest.estimation.feiv_.Feiv.to_array" class="level3">
+<h3 class="anchored" data-anchor-id="pyfixest.estimation.feiv_.Feiv.to_array">to_array</h3>
+<p><code>estimation.feiv_.Feiv.to_array()</code></p>
+<p>Transform estimation DataFrames to arrays.</p>
+</section>
+<section id="pyfixest.estimation.feiv_.Feiv.wls_transform" class="level3">
+<h3 class="anchored" data-anchor-id="pyfixest.estimation.feiv_.Feiv.wls_transform">wls_transform</h3>
+<p><code>estimation.feiv_.Feiv.wls_transform()</code></p>
+<p>Transform variables for WLS estimation.</p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
