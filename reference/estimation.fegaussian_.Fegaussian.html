@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index</title>
+<title>estimation.fegaussian_.fegaussian</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -159,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/index.html">PyFixest Function Reference</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/estimation.feols_.Feols.html">Estimation Classes</a></li><li class="breadcrumb-item"><a href="../reference/estimation.fegaussian_.Fegaussian.html">estimation.fegaussian_.Fegaussian</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -173,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../reference/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PyFixest Function Reference</span></a>
   </div>
 </li>
@@ -283,7 +317,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/estimation.fegaussian_.Fegaussian.html" class="sidebar-item-text sidebar-link">
+  <a href="../reference/estimation.fegaussian_.Fegaussian.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">estimation.fegaussian_.Fegaussian</span></a>
   </div>
 </li>
@@ -384,151 +418,39 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/estimation.feols_.Feols.html">Estimation Classes</a></li><li class="breadcrumb-item"><a href="../reference/estimation.fegaussian_.Fegaussian.html">estimation.fegaussian_.Fegaussian</a></li></ol></nav></header>
 
 
 
 
-<section id="pyfixest-function-reference" class="level1 doc doc-index">
-<h1 class="doc doc-index">PyFixest Function Reference</h1>
-<section id="estimation-functions" class="level2">
-<h2 class="anchored" data-anchor-id="estimation-functions">Estimation Functions</h2>
-<p>User facing estimation functions</p>
-<table class="caption-top table">
-<tbody>
-<tr class="odd">
-<td><a href="../reference/estimation.estimation.feols.html#pyfixest.estimation.estimation.feols">estimation.estimation.feols</a></td>
-<td>Estimate a linear regression models with fixed effects using fixest formula syntax.</td>
-</tr>
-<tr class="even">
-<td><a href="../reference/estimation.estimation.fepois.html#pyfixest.estimation.estimation.fepois">estimation.estimation.fepois</a></td>
-<td>Estimate Poisson regression model with fixed effects using the <code>ppmlhdfe</code> algorithm.</td>
-</tr>
-<tr class="odd">
-<td><a href="../reference/estimation.estimation.feglm.html#pyfixest.estimation.estimation.feglm">estimation.estimation.feglm</a></td>
-<td>Estimate GLM regression models (currently without fixed effects, this is work in progress).</td>
-</tr>
-<tr class="even">
-<td><a href="../reference/did.estimation.did2s.html#pyfixest.did.estimation.did2s">did.estimation.did2s</a></td>
-<td>Estimate a Difference-in-Differences model using Gardner’s two-step DID2S estimator.</td>
-</tr>
-<tr class="odd">
-<td><a href="../reference/did.estimation.lpdid.html#pyfixest.did.estimation.lpdid">did.estimation.lpdid</a></td>
-<td>Local projections approach to estimation.</td>
-</tr>
-<tr class="even">
-<td><a href="../reference/did.estimation.event_study.html#pyfixest.did.estimation.event_study">did.estimation.event_study</a></td>
-<td>Estimate Event Study Model.</td>
-</tr>
-<tr class="odd">
-<td><a href="../reference/estimation.bonferroni.html#pyfixest.estimation.bonferroni">estimation.bonferroni</a></td>
-<td>Compute Bonferroni adjusted p-values for multiple hypothesis testing.</td>
-</tr>
-<tr class="even">
-<td><a href="../reference/estimation.rwolf.html#pyfixest.estimation.rwolf">estimation.rwolf</a></td>
-<td>Compute Romano-Wolf adjusted p-values for multiple hypothesis testing.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="estimation-classes" class="level2">
-<h2 class="anchored" data-anchor-id="estimation-classes">Estimation Classes</h2>
-<p>Details on Methods and Attributes</p>
-<table class="caption-top table">
-<tbody>
-<tr class="odd">
-<td><a href="../reference/estimation.feols_.Feols.html#pyfixest.estimation.feols_.Feols">estimation.feols_.Feols</a></td>
-<td>Non user-facing class to estimate a linear regression via OLS.</td>
-</tr>
-<tr class="even">
-<td><a href="../reference/estimation.fepois_.Fepois.html#pyfixest.estimation.fepois_.Fepois">estimation.fepois_.Fepois</a></td>
-<td>Estimate a Poisson regression model.</td>
-</tr>
-<tr class="odd">
-<td><a href="../reference/estimation.feiv_.Feiv.html#pyfixest.estimation.feiv_.Feiv">estimation.feiv_.Feiv</a></td>
-<td>Non user-facing class to estimate an IV model using a 2SLS estimator.</td>
-</tr>
-<tr class="even">
-<td><a href="../reference/estimation.feglm_.Feglm.html#pyfixest.estimation.feglm_.Feglm">estimation.feglm_.Feglm</a></td>
-<td>Abstract base class for the estimation of a fixed-effects GLM model.</td>
-</tr>
-<tr class="odd">
-<td><a href="../reference/estimation.felogit_.Felogit.html#pyfixest.estimation.felogit_.Felogit">estimation.felogit_.Felogit</a></td>
-<td>Class for the estimation of a fixed-effects logit model.</td>
-</tr>
-<tr class="even">
-<td><a href="../reference/estimation.feprobit_.Feprobit.html#pyfixest.estimation.feprobit_.Feprobit">estimation.feprobit_.Feprobit</a></td>
-<td>Class for the estimation of a fixed-effects probit model.</td>
-</tr>
-<tr class="odd">
-<td><a href="../reference/estimation.fegaussian_.Fegaussian.html#pyfixest.estimation.fegaussian_.Fegaussian">estimation.fegaussian_.Fegaussian</a></td>
-<td>Class for the estimation of a fixed-effects GLM with normal errors.</td>
-</tr>
-<tr class="even">
-<td><a href="../reference/estimation.feols_compressed_.FeolsCompressed.html#pyfixest.estimation.feols_compressed_.FeolsCompressed">estimation.feols_compressed_.FeolsCompressed</a></td>
-<td>Non-user-facing class for compressed regression with fixed effects.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="summarize-and-visualize" class="level2">
-<h2 class="anchored" data-anchor-id="summarize-and-visualize">Summarize and Visualize</h2>
-<p>Post-Processing of Estimation Results</p>
-<table class="caption-top table">
-<tbody>
-<tr class="odd">
-<td><a href="../reference/did.visualize.panelview.html#pyfixest.did.visualize.panelview">did.visualize.panelview</a></td>
-<td>Generate a panel view of the treatment variable over time for each unit.</td>
-</tr>
-<tr class="even">
-<td><a href="../reference/report.summary.html#pyfixest.report.summary">report.summary</a></td>
-<td>Print a summary of estimation results for each estimated model.</td>
-</tr>
-<tr class="odd">
-<td><a href="../reference/report.etable.html#pyfixest.report.etable">report.etable</a></td>
-<td>Create an esttab-like table from a list of models.</td>
-</tr>
-<tr class="even">
-<td><a href="../reference/report.dtable.html#pyfixest.report.dtable">report.dtable</a></td>
-<td>Generate descriptive statistics tables and create a booktab style table in</td>
-</tr>
-<tr class="odd">
-<td><a href="../reference/report.coefplot.html#pyfixest.report.coefplot">report.coefplot</a></td>
-<td>Plot model coefficients with confidence intervals.</td>
-</tr>
-<tr class="even">
-<td><a href="../reference/report.iplot.html#pyfixest.report.iplot">report.iplot</a></td>
-<td>Plot model coefficients for variables interacted via “i()” syntax, with</td>
-</tr>
-<tr class="odd">
-<td><a href="../reference/did.visualize.panelview.html#pyfixest.did.visualize.panelview">did.visualize.panelview</a></td>
-<td>Generate a panel view of the treatment variable over time for each unit.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="misc-utilities" class="level2">
-<h2 class="anchored" data-anchor-id="misc-utilities">Misc / Utilities</h2>
-<p>PyFixest internals and utilities</p>
-<table class="caption-top table">
-<tbody>
-<tr class="odd">
-<td><a href="../reference/estimation.demean.html#pyfixest.estimation.demean">estimation.demean</a></td>
-<td>Demean an array.</td>
-</tr>
-<tr class="even">
-<td><a href="../reference/estimation.detect_singletons.html#pyfixest.estimation.detect_singletons">estimation.detect_singletons</a></td>
-<td>Detect singleton fixed effects in a dataset.</td>
-</tr>
-<tr class="odd">
-<td><a href="../reference/estimation.model_matrix_fixest.html#pyfixest.estimation.model_matrix_fixest">estimation.model_matrix_fixest</a></td>
-<td>Create model matrices for fixed effects estimation.</td>
-</tr>
-</tbody>
-</table>
+<section id="pyfixest.estimation.fegaussian_.Fegaussian" class="level1">
+<h1>estimation.fegaussian_.Fegaussian</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>estimation.fegaussian_.Fegaussian(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    FixestFormula,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    data,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    ssc_dict,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    drop_singletons,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    drop_intercept,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    weights,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    weights_type,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    collin_tol,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    fixef_tol,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    lookup_demeaned_data,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    tol,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    maxiter,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    solver,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    store_data<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    copy_data<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    lean<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    sample_split_var<span class="op">=</span><span class="va">None</span>,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    sample_split_value<span class="op">=</span><span class="va">None</span>,</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    separation_check<span class="op">=</span><span class="va">None</span>,</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    context<span class="op">=</span><span class="dv">0</span>,</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Class for the estimation of a fixed-effects GLM with normal errors.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
