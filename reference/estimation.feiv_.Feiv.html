@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.29">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -71,10 +71,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-eddeaa0ef5a08eafde92c8df792b2f05.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6ef52b30d4130b5a8a6bc02bcd7e7872.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -171,8 +171,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">On Small Sample Corrections</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../quantile-regression.html">
+ <span class="dropdown-text">Quantile Regression</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../compare-fixest-pyfixest.html">
  <span class="dropdown-text">Compare fixest &amp; PyFixest</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../stata-2-pyfixest.html">
+ <span class="dropdown-text">Compare Stata &amp; PyFixest</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../pyfixest_gpu.html">
@@ -459,26 +467,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    weights_type,</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    collin_tol,</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    fixef_tol,</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    lookup_demeaned_data,</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    solver<span class="op">=</span><span class="st">'np.linalg.solve'</span>,</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    demeaner_backend<span class="op">=</span><span class="st">'numba'</span>,</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    store_data<span class="op">=</span><span class="va">True</span>,</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    copy_data<span class="op">=</span><span class="va">True</span>,</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    lean<span class="op">=</span><span class="va">False</span>,</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    context<span class="op">=</span><span class="dv">0</span>,</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    sample_split_var<span class="op">=</span><span class="va">None</span>,</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    sample_split_value<span class="op">=</span><span class="va">None</span>,</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    fixef_maxiter,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    lookup_demeaned_data,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    solver<span class="op">=</span><span class="st">'scipy.linalg.solve'</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    demeaner_backend<span class="op">=</span><span class="st">'numba'</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    store_data<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    copy_data<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    lean<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    context<span class="op">=</span><span class="dv">0</span>,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    sample_split_var<span class="op">=</span><span class="va">None</span>,</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    sample_split_value<span class="op">=</span><span class="va">None</span>,</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Non user-facing class to estimate an IV model using a 2SLS estimator.</p>
 <p>Inherits from the Feols class. Users should not directly instantiate this class, but rather use the <a href="../reference/estimation.feols.qmd">feols()</a> function. Note that no demeaning is performed in this class: demeaning is performed in the <a href="../reference/estimation.fixest_multi.qmd">FixestMulti</a> class (to allow for caching of demeaned variables for multiple estimation).</p>
 <section id="parameters" class="level2 doc-section doc-section-parameters">
 <h2 class="doc-section doc-section-parameters anchored" data-anchor-id="parameters">Parameters</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 7%">
-<col style="width: 38%">
-<col style="width: 44%">
-<col style="width: 8%">
+<col style="width: 6%">
+<col style="width: 43%">
+<col style="width: 40%">
+<col style="width: 9%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -539,14 +548,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td>solver</td>
-<td>Literal['np.linalg.lstsq', 'np.linalg.solve', 'scipy.sparse.linalg.lsqr', 'jax']</td>
-<td>default is ‘np.linalg.solve’. Solver to use for the estimation.</td>
-<td><code>'np.linalg.solve'</code></td>
+<td>Literal['np.linalg.lstsq', 'np.linalg.solve', 'scipy.linalg.solve', 'scipy.sparse.linalg.lsqr', 'jax']</td>
+<td>“scipy.sparse.linalg.lsqr”, “jax”], default is “scipy.linalg.solve”. Solver to use for the estimation.</td>
+<td><code>'scipy.linalg.solve'</code></td>
 </tr>
 <tr class="even">
 <td>demeaner_backend</td>
-<td>Literal['numba', 'jax']</td>
-<td>The backend used for demeaning.</td>
+<td>DemeanerBackendOptions</td>
+<td>The backend to use for demeaning. Can be either “numba”, “jax”, or “rust”. Defaults to “numba”.</td>
 <td><code>'numba'</code></td>
 </tr>
 <tr class="odd">
@@ -833,7 +842,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="example" class="level4 doc-section doc-section-example">
 <h4 class="doc-section doc-section-example anchored" data-anchor-id="example">Example</h4>
 <p>The following is an example usage of this method:</p>
-<pre><code>::: {#e02ec410 .cell execution_count=1}
+<pre><code>::: {#47aa1050 .cell execution_count=1}
 ``` {.python .cell-code}
 import numpy as np
 import pandas as pd
@@ -897,7 +906,7 @@ print("Effective F stat :", F_stat_eff_pf)
 ::: {.cell-output .cell-output-display}
 ```{=html}
 
-            &lt;div id="VLblhX"&gt;&lt;/div&gt;
+            &lt;div id="JstDrz"&gt;&lt;/div&gt;
             &lt;script type="text/javascript" data-lets-plot-script="library"&gt;
                 if(!window.letsPlotCallQueue) {
                     window.letsPlotCallQueue = [];
@@ -908,7 +917,7 @@ print("Effective F stat :", F_stat_eff_pf)
                 (function() {
                     var script = document.createElement("script");
                     script.type = "text/javascript";
-                    script.src = "https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.5.2/js-package/distr/lets-plot.min.js";
+                    script.src = "https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.6.2/js-package/distr/lets-plot.min.js";
                     script.onload = function() {
                         window.letsPlotCall = function(f) {f();};
                         window.letsPlotCallQueue.forEach(function(f) {f();});
@@ -921,9 +930,9 @@ print("Effective F stat :", F_stat_eff_pf)
                         var div = document.createElement("div");
                         div.style.color = 'darkred';
                         div.textContent = 'Error loading Lets-Plot JS';
-                        document.getElementById("VLblhX").appendChild(div);
+                        document.getElementById("JstDrz").appendChild(div);
                     };
-                    var e = document.getElementById("VLblhX");
+                    var e = document.getElementById("JstDrz");
                     e.appendChild(script);
                 })()
             &lt;/script&gt;
@@ -934,7 +943,7 @@ print("Effective F stat :", F_stat_eff_pf)
 ::: {.cell-output .cell-output-display}
 ```{=html}
 
-            &lt;div id="9CGeNZ"&gt;&lt;/div&gt;
+            &lt;div id="5vB5Ea"&gt;&lt;/div&gt;
             &lt;script type="text/javascript" data-lets-plot-script="library"&gt;
                 if(!window.letsPlotCallQueue) {
                     window.letsPlotCallQueue = [];
@@ -945,7 +954,7 @@ print("Effective F stat :", F_stat_eff_pf)
                 (function() {
                     var script = document.createElement("script");
                     script.type = "text/javascript";
-                    script.src = "https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.5.2/js-package/distr/lets-plot.min.js";
+                    script.src = "https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v4.6.2/js-package/distr/lets-plot.min.js";
                     script.onload = function() {
                         window.letsPlotCall = function(f) {f();};
                         window.letsPlotCallQueue.forEach(function(f) {f();});
@@ -958,9 +967,9 @@ print("Effective F stat :", F_stat_eff_pf)
                         var div = document.createElement("div");
                         div.style.color = 'darkred';
                         div.textContent = 'Error loading Lets-Plot JS';
-                        document.getElementById("9CGeNZ").appendChild(div);
+                        document.getElementById("5vB5Ea").appendChild(div);
                     };
-                    var e = document.getElementById("9CGeNZ");
+                    var e = document.getElementById("5vB5Ea");
                     e.appendChild(script);
                 })()
             &lt;/script&gt;
@@ -970,8 +979,8 @@ print("Effective F stat :", F_stat_eff_pf)
 
 ::: {.cell-output .cell-output-stdout}
 ```
-(Unadjusted) F stat : 52.81535560457482
-Effective F stat : 48.61288119858688
+(Unadjusted) F stat : 52.81535560457488
+Effective F stat : 48.61288119858695
 ```
 :::
 :::</code></pre>
